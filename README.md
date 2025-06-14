@@ -45,23 +45,30 @@ A complete cheat sheet of Markdown formatting, compatible with GitHub Flavored M
 ## 🔢 Lists
 
 ### Unordered Lists
-```
+
+```markdown
 - Item 1
-* Item 2
-+ Item 3
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
 ```
 
 ### Ordered Lists
-```
+
+```markdown
 1. First
 2. Second
+   1. Substep
+   2. Another substep
 ```
 
-### Nested Lists
-```
-1. First
-   - Subitem
-     - Sub-subitem
+### Mixed Nested
+
+```markdown
+- Main
+  1. Numbered inside bullet
+  2. Another one
+- Another Main
 ```
 
 ---
