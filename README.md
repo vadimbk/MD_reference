@@ -43,6 +43,8 @@ A complete cheat sheet of Markdown formatting, compatible with GitHub Flavored M
 ---
 
 ## 🔢 Lists
+> **Note:** To create nested lists, indent with either **2 spaces, 4 spaces, or a tab** (`\t`). However, for consistent rendering across platforms, using **4 spaces or a tab** is recommended.
+
 
 ### Unordered Lists
 
@@ -84,6 +86,13 @@ A complete cheat sheet of Markdown formatting, compatible with GitHub Flavored M
 ---
 
 ## 📐 Tables
+> **Tip:** Tables must begin with a header row, followed by a separator row using `-` and optional colons (`:`) for alignment:
+> - `:---` for left-aligned
+> - `:---:` for center-aligned
+> - `---:` for right-aligned
+>
+> Table rows should be aligned using `|` between columns. All rows should have the same number of columns for best results.
+
 
 ```markdown
 | Header 1 | Header 2 |
@@ -129,7 +138,9 @@ With alignment:
 - Use inline HTML sparingly to maintain compatibility.
 ---
 
-## 🔢 Lists — Details and Pitfalls
+## 🔢 Lists
+> **Note:** To create nested lists, indent with either **2 spaces, 4 spaces, or a tab** (`\t`). However, for consistent rendering across platforms, using **4 spaces or a tab** is recommended.
+ — Details and Pitfalls
 
 ### Key Points:
 - You can use `-`, `*`, or `+` for unordered lists — they behave the same.
@@ -148,7 +159,14 @@ With alignment:
 
 ---
 
-## 📐 Tables — Markdown Style
+## 📐 Tables
+> **Tip:** Tables must begin with a header row, followed by a separator row using `-` and optional colons (`:`) for alignment:
+> - `:---` for left-aligned
+> - `:---:` for center-aligned
+> - `---:` for right-aligned
+>
+> Table rows should be aligned using `|` between columns. All rows should have the same number of columns for best results.
+ — Markdown Style
 
 Tables are defined using pipes `|` and dashes `-`.
 
