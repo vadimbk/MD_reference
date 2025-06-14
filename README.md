@@ -127,3 +127,63 @@ With alignment:
 
 - GFM (GitHub Flavored Markdown) supports tables, task lists, and syntax highlighting.
 - Use inline HTML sparingly to maintain compatibility.
+---
+
+## 🔢 Lists — Details and Pitfalls
+
+### Key Points:
+- You can use `-`, `*`, or `+` for unordered lists — they behave the same.
+- For ordered lists, Markdown renders numbers sequentially regardless of what you type.
+- **Indentation matters**: use **2 or 4 spaces**, or **1 tab**, for nested levels.
+
+### Best Practices:
+- Use **consistent indentation** (prefer 2 or 4 spaces, not mixed).
+- GitHub supports both **tabs** and **spaces**, but spaces are safer for cross-platform rendering.
+
+```markdown
+1. Main item
+   - Subitem (2 spaces)
+     - Sub-subitem (4 spaces)
+```
+
+---
+
+## 📐 Tables — Markdown Style
+
+Tables are defined using pipes `|` and dashes `-`.
+
+### Basic Table
+
+```markdown
+| Column 1 | Column 2 |
+|----------|----------|
+| Data A   | Data B   |
+| Data C   | Data D   |
+```
+
+Output:
+
+| Column 1 | Column 2 |
+|----------|----------|
+| Data A   | Data B   |
+| Data C   | Data D   |
+
+### Aligned Table
+
+```markdown
+| Left Align | Center Align | Right Align |
+|:-----------|:------------:|------------:|
+| A          |     B        |           C |
+| D          |     E        |           F |
+```
+
+Output:
+
+| Left Align | Center Align | Right Align |
+|:-----------|:------------:|------------:|
+| A          |     B        |           C |
+| D          |     E        |           F |
+
+- `:---` = left align
+- `:---:` = center align
+- `---:` = right align
