@@ -1,2 +1,122 @@
-# MD_reference
-Markdown language reference
+# Full Markdown Syntax Reference
+
+A complete cheat sheet of Markdown formatting, compatible with GitHub Flavored Markdown (GFM).
+
+---
+
+## 📄 Text Formatting
+
+| Markdown | Description | Example | Output |
+|----------|-------------|---------|--------|
+| `*text*` or `_text_` | *Italic* | `*italic*` | *italic* |
+| `**text**` or `__text__` | **Bold** | `**bold**` | **bold** |
+| `***text***` | ***Bold & Italic*** | `***bold italic***` | ***bold italic*** |
+| `~~text~~` | ~~Strikethrough~~ | `~~struck~~` | ~~struck~~ |
+| `` `code` `` | Inline `code` | `` `print()` `` | `print()` |
+| `> quote` | Blockquote | `> This is a quote.` | > This is a quote |
+| `\*` | Escape special character | `\*not italic\*` | \*not italic\* |
+
+---
+
+## 🧱 Headings
+
+| Markdown | Description | Example | Level |
+|----------|-------------|---------|-------|
+| `# Heading` | H1 | `# Heading 1` | H1 |
+| `## Heading` | H2 | `## Heading 2` | H2 |
+| `### Heading` | H3 | `### Heading 3` | H3 |
+| `#### Heading` | H4 | `#### Heading 4` | H4 |
+| `##### Heading` | H5 | `##### Heading 5` | H5 |
+| `###### Heading` | H6 | `###### Heading 6` | H6 |
+
+---
+
+## 🔗 Links and Images
+
+| Markdown | Description | Example | Output |
+|----------|-------------|---------|--------|
+| `[text](url)` | Hyperlink | `[Google](https://google.com)` | [Google](https://google.com) |
+| `[text](url "tooltip")` | Link with tooltip | `[site](https://example.com "tooltip")` | [site](https://example.com "tooltip") |
+| `![alt](image.jpg)` | Image | `![img](image.jpg)` | ![img](image.jpg) |
+| `<https://url>` | Auto link | `<https://github.com>` | <https://github.com> |
+
+---
+
+## 🔢 Lists
+
+### Unordered Lists
+```
+- Item 1
+* Item 2
++ Item 3
+```
+
+### Ordered Lists
+```
+1. First
+2. Second
+```
+
+### Nested Lists
+```
+1. First
+   - Subitem
+     - Sub-subitem
+```
+
+---
+
+## 📋 Code
+
+| Markdown | Description | Example | Output |
+|----------|-------------|---------|--------|
+| `` `code` `` | Inline code | `` `ls -la` `` | `ls -la` |
+| <pre>```language<br>code block<br>```</pre> | Code block with syntax | ```bash<br>echo "hi"<br>``` | Syntax-highlighted |
+| 4 spaces indent | Old-style code block |     indented line | Indented block |
+
+---
+
+## 📐 Tables
+
+```markdown
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1    | Row 2    |
+```
+
+With alignment:
+
+```markdown
+| Left | Center | Right |
+|:-----|:------:|------:|
+| A    |   B    |     C |
+```
+
+---
+
+## ✅ Task Lists (GFM)
+
+```markdown
+- [x] Completed
+- [ ] Pending
+```
+
+- [x] Completed  
+- [ ] Pending
+
+---
+
+## ⚙️ Other
+
+| Markdown | Description | Example | Output |
+|----------|-------------|---------|--------|
+| `---` or `***` | Horizontal rule | `---` | --- |
+| `<br>` | Line break | `Line 1<br>Line 2` | Line 1<br>Line 2 |
+| `<span style="color:red">text</span>` | HTML in Markdown | if supported | HTML element |
+
+---
+
+## 💡 Notes
+
+- GFM (GitHub Flavored Markdown) supports tables, task lists, and syntax highlighting.
+- Use inline HTML sparingly to maintain compatibility.
